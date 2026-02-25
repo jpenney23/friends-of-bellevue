@@ -22,8 +22,8 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
+          <div className="space-y-4 text-center md:text-left">
+            <div className="flex items-center gap-3 justify-center md:justify-start">
               <Heart className="size-6 text-fob-orange" />
               <div>
                 <p className="font-bold text-lg leading-tight">Friends of Bellevue</p>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold text-white/90 mb-4 text-sm uppercase tracking-wider">
               Quick Links
             </h3>
@@ -59,18 +59,18 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold text-white/90 mb-4 text-sm uppercase tracking-wider">
               Contact
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <Mail className="size-4 text-fob-orange mt-0.5 shrink-0" />
                 <span className="text-white/60 text-sm">info@friendsofbellevue.org</span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin className="size-4 text-fob-green mt-0.5 shrink-0" />
-                <span className="text-white/60 text-sm">
+                <span className="text-white/60 text-sm text-left">
                   Bellevue Golf Club<br />
                   320 Porter St<br />
                   Melrose, MA 02176
@@ -80,8 +80,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/40 text-sm">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <p className="text-white/40 text-sm text-center sm:text-left">
             © 2026 Friends of Bellevue for the Cause. All rights reserved.
           </p>
           <p className="text-white/40 text-xs">
