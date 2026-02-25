@@ -1,21 +1,16 @@
-'use client';
-
+import Link from 'next/link';
 import { Heart, Mail, MapPin } from 'lucide-react';
 
 const footerNav = [
-  { name: 'About', href: '#mission' },
-  { name: 'Events', href: '#events' },
-  { name: 'Gallery', href: '#gallery' },
-  { name: 'Charities', href: '#charities' },
-  { name: 'Sponsors', href: '#sponsors' },
-  { name: 'Leadership', href: '#leadership' },
+  { name: 'About', href: '/#mission' },
+  { name: 'Events', href: '/#events' },
+  { name: 'Gallery', href: '/#gallery' },
+  { name: 'Charities', href: '/#charities' },
+  { name: 'Sponsors', href: '/#sponsors' },
+  { name: 'Leadership', href: '/#leadership' },
 ];
 
 export default function Footer() {
-  const scrollTo = (href: string) => {
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-fob-dark-navy dark:bg-[#0b1120] dark:border-t dark:border-white/5 text-white">
@@ -47,12 +42,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerNav.map((item) => (
                 <li key={item.name}>
-                  <button
-                    onClick={() => scrollTo(item.href)}
+                  <Link
+                    href={item.href}
                     className="text-white/60 hover:text-white text-sm transition-colors"
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
