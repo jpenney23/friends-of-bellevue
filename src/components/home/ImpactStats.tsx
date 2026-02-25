@@ -27,7 +27,7 @@ const stats: Stat[] = [
     value: 6,
     label: 'Years Strong',
     sublabel: 'Serving the Bellevue community since 2019',
-    colorClass: 'text-[#3A9E42] dark:text-fob-orange',
+    colorClass: 'text-[#3A9E42]',
   },
   {
     value: 600,
@@ -40,7 +40,7 @@ const stats: Stat[] = [
     value: 3,
     label: 'Causes',
     sublabel: 'Dana-Farber, Bread of Life & MS Research',
-    colorClass: 'text-[#3A9E42] dark:text-fob-orange',
+    colorClass: 'text-[#3A9E42]',
   },
 ];
 
