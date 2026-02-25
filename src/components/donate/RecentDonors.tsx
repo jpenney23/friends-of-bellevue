@@ -15,7 +15,7 @@ export default function RecentDonors() {
   const doubled = [...donors, ...donors];
 
   return (
-    <section className="py-20 bg-white dark:bg-[#0b1120] overflow-hidden">
+    <section className="py-20 bg-white dark:bg-[#0b1120] dark:border-t dark:border-white/15 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-10 text-center">
         <h2 className="text-3xl md:text-4xl font-black text-fob-dark-navy dark:text-white mb-2">
           Recent Donors

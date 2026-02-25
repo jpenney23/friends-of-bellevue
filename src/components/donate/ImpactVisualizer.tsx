@@ -36,7 +36,7 @@ export default function ImpactVisualizer() {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50 dark:bg-[#0b1120]">
+    <section ref={ref} className="py-20 bg-gray-50 dark:bg-[#0b1120] dark:border-t dark:border-white/15">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -14,7 +14,7 @@ export default function FundAllocation() {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section ref={ref} className="bg-fob-dark-navy dark:bg-[#0b1120] dark:border-t dark:border-white/5 py-20">
+    <section ref={ref} className="bg-fob-dark-navy dark:bg-[#0b1120] dark:border-t dark:border-white/15 py-20">
       <div className="mx-auto max-w-3xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

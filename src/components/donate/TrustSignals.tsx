@@ -9,7 +9,7 @@ const signals = [
 
 export default function TrustSignals() {
   return (
-    <section className="py-14 bg-gray-50 dark:bg-[#0b1120] border-t border-gray-100 dark:border-white/10">
+    <section className="py-14 bg-gray-50 dark:bg-[#0b1120] border-t border-gray-100 dark:border-white/15">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {signals.map((item, i) => {

@@ -75,7 +75,7 @@ export default function DonationAmountPicker() {
   const isCheckSelected = selectedMethod === 'check';
 
   return (
-    <section className="py-16 bg-white dark:bg-[#0b1120]">
+    <section className="py-16 bg-white dark:bg-[#0b1120] dark:border-t dark:border-white/15">
       <div className="mx-auto max-w-2xl px-6">
         <div className="rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-[#141e34] shadow-xl overflow-hidden">
 
