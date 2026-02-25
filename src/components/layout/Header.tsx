@@ -41,7 +41,7 @@ export default function Header() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 focus:outline-none">
+        <Link href="/" className="flex items-center gap-3 focus:outline-none min-w-0 shrink">
           <div className={cn("relative h-12 w-12 rounded-full overflow-hidden border-2 shadow-md flex-shrink-0", scrolled ? "border-fob-navy/20 dark:border-white/40" : "border-white/40")}>
             <Image
               src="/images/logo.jpg"
@@ -53,7 +53,7 @@ export default function Header() {
           </div>
           <span
             className={cn(
-              'font-bold text-sm leading-tight transition-colors',
+              'font-bold text-sm leading-tight transition-colors min-w-0 truncate',
               scrolled ? 'text-fob-navy dark:text-white' : 'text-white'
             )}
           >
@@ -79,11 +79,11 @@ export default function Header() {
         </div>
 
         {/* Right side */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-shrink-0">
           <ThemeToggle scrolled={scrolled} />
           <Link
             href="/donate"
-            className="flex items-center gap-2 bg-fob-orange hover:bg-fob-orange/85 text-white font-semibold text-sm px-4 py-2 rounded-full shadow-md transition-all hover:shadow-lg hover:scale-105 touch-manipulation btn-shine"
+            className="flex items-center gap-2 bg-fob-orange hover:bg-fob-orange/85 text-white font-semibold text-sm px-4 py-2 rounded-full shadow-md transition-colors hover:shadow-lg touch-manipulation btn-shine"
           >
             <Heart className="size-4" />
             Donate
