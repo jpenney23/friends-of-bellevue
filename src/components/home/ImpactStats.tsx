@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 interface Stat {
   prefix?: string;
@@ -9,7 +10,7 @@ interface Stat {
   suffix?: string;
   label: string;
   sublabel: string;
-  color: string;
+  colorClass: string;
   noFormat?: boolean;
 }
 
@@ -20,26 +21,26 @@ const stats: Stat[] = [
     suffix: '+',
     label: 'Total Raised',
     sublabel: 'In charitable giving across all events since our founding',
-    color: '#E8671A',
+    colorClass: 'text-fob-orange',
   },
   {
     value: 6,
     label: 'Years Strong',
     sublabel: 'Serving the Bellevue community since 2019',
-    color: '#3A9E42',
+    colorClass: 'text-[#3A9E42] dark:text-fob-orange',
   },
   {
     value: 600,
     suffix: '+',
     label: 'Lives Changed',
     sublabel: 'Individuals and families touched by our charitable work',
-    color: '#E8671A',
+    colorClass: 'text-fob-orange',
   },
   {
     value: 3,
     label: 'Causes',
     sublabel: 'Dana-Farber, Bread of Life & MS Research',
-    color: '#3A9E42',
+    colorClass: 'text-[#3A9E42] dark:text-fob-orange',
   },
 ];
 
@@ -111,8 +112,7 @@ export default function ImpactStats() {
               className="text-center"
             >
               <div
-                className="text-4xl md:text-5xl font-black mb-2 fob-stat-value"
-                style={{ color: stat.color }}
+                className={cn('text-4xl md:text-5xl font-black mb-2 fob-stat-value', stat.colorClass)}
               >
                 <AnimatedCounter stat={stat} isVisible={isInView} />
               </div>
