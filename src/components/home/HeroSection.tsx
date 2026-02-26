@@ -52,21 +52,27 @@ export default function HeroSection() {
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-5xl mx-auto">
-        {/* Logo */}
+        {/* Logo + name */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="mb-8"
+          className="mb-6 flex flex-col items-center gap-3"
         >
-          <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/30 shadow-xl mx-auto">
+          <div className="relative w-36 h-36 mx-auto drop-shadow-xl">
             <Image
               src="/images/logo.jpg"
               alt="Friends of Bellevue for the Cause"
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
+          </div>
+          <div className="text-center">
+            <p className="text-white font-black text-2xl md:text-3xl leading-tight drop-shadow-md">
+              Friends of Bellevue
+            </p>
+            <p className="text-white/70 text-sm font-medium tracking-wide">for the Cause</p>
           </div>
         </motion.div>
 
