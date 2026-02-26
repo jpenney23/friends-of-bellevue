@@ -68,12 +68,11 @@ export default function HeroSection() {
               priority
             />
           </div>
-          <div className="text-center">
-            <p className="text-white font-black text-2xl md:text-3xl leading-tight drop-shadow-md">
-              Friends of Bellevue
-            </p>
-            <p className="text-white/70 text-sm font-medium tracking-wide">for the Cause</p>
-          </div>
+          <p className="font-black text-2xl md:text-3xl leading-tight drop-shadow-md">
+            <span className="text-fob-orange">Friends</span>{' '}
+            <span className="text-fob-green">of</span>{' '}
+            <span className="text-fob-navy dark:text-[#4a8fd6]">Bellevue</span>
+          </p>
         </motion.div>
 
         {/* Tagline */}
