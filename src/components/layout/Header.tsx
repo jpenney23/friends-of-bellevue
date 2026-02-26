@@ -42,19 +42,19 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 focus:outline-none min-w-0 shrink">
-          <div className={cn("relative h-12 w-12 rounded-full overflow-hidden border-2 shadow-md flex-shrink-0", scrolled ? "border-fob-navy/20 dark:border-white/40" : "border-white/40")}>
+          <div className="relative h-12 w-12 flex-shrink-0 drop-shadow-md">
             <Image
               src="/images/logo.jpg"
-              alt="Friends of Bellevue for the Cause"
+              alt="Friends of Bellevue"
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>
-          <span className="font-bold text-sm leading-tight min-w-0 truncate">
+          <span className="font-extrabold text-base leading-tight min-w-0 truncate drop-shadow-sm">
             <span className="text-fob-orange">Friends</span>{' '}
             <span className="text-fob-green">of</span>{' '}
-            <span className={scrolled ? 'text-fob-navy dark:text-[#4a8fd6]' : 'text-[#4a8fd6]'}>Bellevue</span>
+            <span className="text-[#4a8fd6]">Bellevue</span>
           </span>
         </Link>
 

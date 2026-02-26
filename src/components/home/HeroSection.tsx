@@ -68,10 +68,10 @@ export default function HeroSection() {
               priority
             />
           </div>
-          <p className="font-black text-2xl md:text-3xl leading-tight drop-shadow-md">
+          <p className="font-black text-2xl md:text-3xl leading-tight [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">
             <span className="text-fob-orange">Friends</span>{' '}
             <span className="text-fob-green">of</span>{' '}
-            <span className="text-fob-navy dark:text-[#4a8fd6]">Bellevue</span>
+            <span className="text-[#4a8fd6]">Bellevue</span>
           </p>
         </motion.div>
 
