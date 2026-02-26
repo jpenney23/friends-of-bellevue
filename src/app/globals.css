@@ -146,33 +146,6 @@
     100% { left: 130%; }
   }
 
-  /* Animated brand-color shimmer for "Friends of Bellevue" name */
-  .fob-name-shimmer {
-    background: linear-gradient(
-      90deg,
-      #E8671A 0%,
-      #E8671A 30%,
-      #3A9E42 38%,
-      #3A9E42 50%,
-      #4a8fd6 57%,
-      #ffffff 68%,
-      #4a8fd6 76%,
-      #4a8fd6 100%
-    );
-    background-size: 220% auto;
-    background-position: 0% center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: fob-name-shimmer 3.5s ease-in-out infinite;
-  }
-
-  @keyframes fob-name-shimmer {
-    0%   { background-position: 0% center; }
-    50%  { background-position: 100% center; }
-    100% { background-position: 0% center; }
-  }
-
   /* Section accent bar — light sections (orange → navy) */
   .fob-accent-bar {
     display: block;

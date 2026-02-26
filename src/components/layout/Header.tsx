@@ -51,7 +51,7 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="fob-name-shimmer font-extrabold text-base leading-tight min-w-0 truncate">
+          <span className={cn('font-extrabold text-base leading-tight min-w-0 truncate transition-colors', scrolled ? 'text-fob-navy dark:text-white' : 'text-white')}>
             Friends of Bellevue
           </span>
         </Link>

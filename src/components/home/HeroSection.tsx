@@ -68,7 +68,7 @@ export default function HeroSection() {
               priority
             />
           </div>
-          <p className="fob-name-shimmer font-black text-2xl md:text-3xl leading-tight">
+          <p className="text-white font-black text-2xl md:text-3xl leading-tight drop-shadow-md">
             Friends of Bellevue
           </p>
         </motion.div>
