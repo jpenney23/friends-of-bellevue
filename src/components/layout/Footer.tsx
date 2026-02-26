@@ -14,10 +14,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-fob-dark-navy dark:bg-[#0b1120] dark:border-t dark:border-white/5 text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="mx-auto max-w-7xl px-6 py-10 md:py-16 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
           {/* Brand */}
-          <div className="space-y-4 text-center md:text-left">
+          <div className="space-y-2 md:space-y-4 text-center md:text-left">
             <div className="flex items-center gap-3 justify-center md:justify-start">
               <Heart className="size-6 text-fob-orange" />
               <div>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+        <div className="mt-6 md:mt-12 pt-6 md:pt-8 border-t border-white/10 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <p className="text-white/40 text-sm text-center sm:text-left">
             © 2026 Friends of Bellevue for the Cause. All rights reserved.
           </p>
