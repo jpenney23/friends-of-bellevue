@@ -51,10 +51,8 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="font-extrabold text-base leading-tight min-w-0 truncate drop-shadow-sm">
-            <span className="text-fob-orange">Friends</span>{' '}
-            <span className="text-fob-green">of</span>{' '}
-            <span className="text-[#4a8fd6]">Bellevue</span>
+          <span className="fob-name-shimmer font-extrabold text-base leading-tight min-w-0 truncate">
+            Friends of Bellevue
           </span>
         </Link>
 
