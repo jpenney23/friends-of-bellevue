@@ -14,8 +14,8 @@ const charities = [
     badge: 'Primary Beneficiary',
     badgeColor: 'bg-fob-navy text-white',
     description:
-      'Dana-Farber is one of the world\'s leading cancer research and treatment centers. FOB\'s fundraising directly supports their groundbreaking research into life-saving cancer treatments. We have donated over $70,000 to Dana-Farber to date.',
-    impact: '$70,000+ donated',
+      'Dana-Farber is one of the world\'s leading cancer research and treatment centers. FOB\'s fundraising directly supports their groundbreaking research into life-saving cancer treatments. We have donated over $150,000 to Dana-Farber to date.',
+    impact: '$150,000+ donated',
     impactColor: '#1B5EA8',
   },
   {
@@ -28,7 +28,7 @@ const charities = [
     badgeColor: 'bg-fob-green text-white',
     description:
       'Bread of Life is a community organization providing hunger relief and essential services to families in need. FOB supports their mission of ensuring no one in our community goes without food or shelter.',
-    impact: 'Supporting ~600 families',
+    impact: 'Supporting local families',
     impactColor: '#3A9E42',
   },
   {
@@ -100,6 +100,21 @@ export default function CharitiesSection() {
               </motion.div>
             );
           })}
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: charities.length * 0.15 }}
+            className="bg-white dark:bg-[#141e34] rounded-2xl border-2 border-dashed border-gray-300 dark:border-white/20 shadow-sm p-6 flex flex-col items-center justify-center text-center"
+          >
+            <div className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-white/10 flex items-center justify-center mb-4">
+              <span className="text-2xl font-black text-gray-400 dark:text-white/40">+</span>
+            </div>
+            <h3 className="font-black text-fob-dark-navy dark:text-white text-xl mb-2">More Coming Soon</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm">
+              We are always looking to expand our charitable impact. Stay tuned for new partnerships.
+            </p>
+          </motion.div>
         </div>
       </div>
     </section>

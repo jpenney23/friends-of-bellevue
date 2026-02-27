@@ -2,18 +2,9 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ArrowRight, Building2, Car, ShoppingBag } from 'lucide-react';
+import { ArrowRight, Car, ShoppingBag } from 'lucide-react';
 
 const sponsors = [
-  {
-    name: 'Citizens Bank',
-    tier: 'Major Sponsor — Pending',
-    icon: Building2,
-    iconColor: '#1B3E7A',
-    bgColor: 'bg-blue-50 dark:bg-blue-500/20',
-    description: 'Pending partnership with Citizens Bank to support our annual golf tournament and charitable giving initiatives.',
-    pending: true,
-  },
   {
     name: 'Tulley Motors',
     tier: 'Presenting Sponsor',
@@ -87,6 +78,22 @@ export default function SponsorsSection() {
               </motion.div>
             );
           })}
+
+          {/* More coming soon */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: sponsors.length * 0.15 }}
+            className="bg-white/5 border border-dashed border-white/20 rounded-2xl p-6 flex flex-col items-center justify-center text-center"
+          >
+            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4">
+              <span className="text-2xl font-black text-white/30">+</span>
+            </div>
+            <h3 className="font-black text-white text-xl mb-2">More Coming Soon</h3>
+            <p className="text-white/50 text-sm">
+              Interested in becoming a sponsor? We'd love to have you on board.
+            </p>
+          </motion.div>
         </div>
 
         <motion.div

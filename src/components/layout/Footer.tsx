@@ -61,14 +61,13 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 justify-center md:justify-start">
                 <Mail className="size-4 text-fob-orange mt-0.5 shrink-0" />
-                <span className="text-white/60 text-sm">info@friendsofbellevue.org</span>
+                <span className="text-white/60 text-sm">info@friendsofbellevue.com</span>
               </li>
               <li className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin className="size-4 text-fob-green mt-0.5 shrink-0" />
                 <span className="text-white/60 text-sm text-left">
-                  Bellevue Golf Club<br />
-                  320 Porter St<br />
-                  Melrose, MA 02176
+                  67 Bainbridge St<br />
+                  Malden, MA 02148
                 </span>
               </li>
             </ul>

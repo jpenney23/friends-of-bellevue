@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://friends-of-bellevue.vercel.app"),
   title: "Friends of Bellevue for the Cause | Golf Club Charity",
   description:
-    "Friends of Bellevue for the Cause (FOB) is a 501(c)(3) golf club charity that has donated $70,000 to Dana-Farber Cancer Institute and supports ~600 Bellevue families. Join us in uniting community and funding hope.",
+    "Friends of Bellevue for the Cause (FOB) is a 501(c)(3) golf club charity that has donated $150,000 to Dana-Farber Cancer Institute and supports local families.Join us in uniting community and funding hope.",
   keywords: [
     "Friends of Bellevue",
     "FOB",

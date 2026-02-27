@@ -11,24 +11,24 @@ export interface Event {
 
 export const upcomingEvents: Event[] = [
   {
-    id: "golf-tournament-2025",
+    id: "golf-tournament-2026",
     title: "Annual FOB Golf Tournament",
-    date: "2025-09-13",
-    dateDisplay: "September 13, 2025",
-    location: "Bellevue Golf Club, Melrose, MA",
+    date: "2026-09-21",
+    dateDisplay: "September 21, 2026",
+    location: "67 Bainbridge St, Malden, MA 02148",
     description:
       "Join us for our flagship annual golf tournament benefiting Dana-Farber Cancer Institute. A day of golf, camaraderie, and community impact. All skill levels welcome.",
     type: "golf",
     registrationOpen: false,
   },
   {
-    id: "fall-social-2025",
+    id: "fall-social-2026",
     title: "Fall Community Social",
-    date: "2025-10-18",
-    dateDisplay: "October 18, 2025",
-    location: "Bellevue Golf Club, Melrose, MA",
+    date: "2026-12-31",
+    dateDisplay: "TBA",
+    location: "TBA",
     description:
-      "An evening of community connection, live music, and celebration of our charitable achievements. Food, drinks, and great company guaranteed.",
+      "An evening of community connection, live music, and celebration of our charitable achievements. Food, drinks, and great company guaranteed. Date and location to be announced.",
     type: "social",
     registrationOpen: false,
   },

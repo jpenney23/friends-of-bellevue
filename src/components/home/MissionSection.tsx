@@ -45,7 +45,7 @@ export default function MissionSection() {
               <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed font-medium">
                 Founded in 2019 by a dedicated group of Bellevue residents with a shared passion
                 for golf and giving back, FOB has grown from a small gathering into a cornerstone
-                of our community's charitable efforts — donating over $70,000 to date.
+                of our community's charitable efforts — donating over $150,000 to date.
               </p>
             </div>
 
@@ -53,15 +53,8 @@ export default function MissionSection() {
               <div className="flex items-start gap-3 p-4 bg-gray-50 dark:bg-[#141e34] rounded-xl">
                 <Users className="size-5 text-fob-navy mt-0.5 shrink-0" />
                 <div>
-                  <p className="font-bold text-fob-dark-navy dark:text-white text-sm">~600 Families</p>
+                  <p className="font-bold text-fob-dark-navy dark:text-white text-sm">Community</p>
                   <p className="text-gray-500 dark:text-gray-400 text-xs">in the Bellevue community</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-gray-50 dark:bg-[#141e34] rounded-xl">
-                <Heart className="size-5 text-fob-orange mt-0.5 shrink-0" />
-                <div>
-                  <p className="font-bold text-fob-dark-navy dark:text-white text-sm">3 Charities</p>
-                  <p className="text-gray-500 dark:text-gray-400 text-xs">supported since founding</p>
                 </div>
               </div>
             </div>
@@ -90,7 +83,7 @@ export default function MissionSection() {
                     Annual Golf Tournament & Community Event
                   </p>
                   <p className="text-gray-500 text-xs mt-0.5">
-                    Bellevue Golf Club — Melrose, MA
+                    67 Bainbridge St — Malden, MA
                   </p>
                 </div>
               </div>

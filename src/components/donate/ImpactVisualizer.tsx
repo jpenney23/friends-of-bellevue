@@ -16,7 +16,7 @@ const impacts = [
   {
     Icon: Utensils,
     title: 'Hunger Relief',
-    description: 'Helping Bread of Life provide meals and essential services to ~600 families in our community.',
+    description: 'Helping Bread of Life provide meals and essential services to families in our community.',
     borderColor: 'border-fob-green',
     accentColor: 'text-fob-green',
     iconColor: 'text-fob-green',

@@ -13,6 +13,7 @@ const typeConfig = {
 
 function EventCard({ event, index }: { event: typeof upcomingEvents[0]; index: number }) {
   const config = typeConfig[event.type];
+  const isTBA = event.dateDisplay === 'TBA';
   const [year, month, day] = event.date.split('-');
   const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
   const monthStr = dateObj.toLocaleString('default', { month: 'short' }).toUpperCase();
@@ -35,9 +36,15 @@ function EventCard({ event, index }: { event: typeof upcomingEvents[0]; index: n
             className="flex-shrink-0 text-center rounded-xl px-3 py-2 min-w-[60px]"
             style={{ backgroundColor: `${config.color}15`, color: config.color }}
           >
-            <p className="text-xs font-bold tracking-wider">{monthStr}</p>
-            <p className="text-2xl font-black leading-none">{day}</p>
-            <p className="text-xs font-medium opacity-70">{year}</p>
+            {isTBA ? (
+              <p className="text-sm font-black leading-none py-2">TBA</p>
+            ) : (
+              <>
+                <p className="text-xs font-bold tracking-wider">{monthStr}</p>
+                <p className="text-2xl font-black leading-none">{day}</p>
+                <p className="text-xs font-medium opacity-70">{year}</p>
+              </>
+            )}
           </div>
 
           <div className="flex-1 min-w-0">
@@ -106,21 +113,6 @@ export default function UpcomingEvents() {
           ))}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.5 }}
-          className="text-center text-gray-400 dark:text-gray-500 text-sm mt-10"
-        >
-          Stay tuned — more events will be announced soon.{' '}
-          <button
-            onClick={() => document.querySelector('#newsletter')?.scrollIntoView({ behavior: 'smooth' })}
-            className="underline text-fob-navy dark:text-white hover:text-fob-orange transition-colors"
-          >
-            Join our newsletter
-          </button>{' '}
-          to be the first to know.
-        </motion.p>
       </div>
     </section>
   );

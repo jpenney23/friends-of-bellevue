@@ -46,12 +46,12 @@ export default function DonateHero() {
           transition={{ duration: 0.6 }}
           className="mb-8 flex justify-center"
         >
-          <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
+          <div className="relative w-20 h-20 drop-shadow-2xl">
             <Image
               src="/images/logo.jpg"
               alt="Friends of Bellevue for the Cause"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </motion.div>
@@ -82,8 +82,8 @@ export default function DonateHero() {
           className="bg-white/10 dark:bg-[#141e34] backdrop-blur-sm rounded-2xl p-6 text-left"
         >
           <div className="flex justify-between items-center mb-3">
-            <span className="text-white dark:text-white font-bold text-lg">$70,000 raised</span>
-            <span className="text-white/60 dark:text-gray-400 text-sm">Goal: $100,000</span>
+            <span className="text-white dark:text-white font-bold text-lg">$70,000 raised in 2026</span>
+            <span className="text-white/60 dark:text-gray-400 text-sm">2026 Goal: $100,000</span>
           </div>
           <div className="h-3 bg-white/20 dark:bg-white/10 rounded-full overflow-hidden">
             <motion.div
@@ -93,7 +93,7 @@ export default function DonateHero() {
               className="h-full bg-fob-orange rounded-full"
             />
           </div>
-          <p className="text-white/60 text-xs mt-2">70% of goal reached — help us get to $100,000!</p>
+          <p className="text-white/60 text-xs mt-2">70% of 2026 goal reached — help us get to $100,000!</p>
         </motion.div>
       </div>
     </section>

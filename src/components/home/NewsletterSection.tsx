@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Mail, ArrowRight, Check } from 'lucide-react';
+import { Mail, ArrowRight, Check, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 export default function NewsletterSection() {
@@ -110,8 +110,9 @@ export default function NewsletterSection() {
             </p>
             <Link
               href="/donate"
-              className="inline-flex items-center gap-2 bg-white/20 border border-white/40 text-white font-bold px-6 py-3 rounded-full hover:bg-white/30 transition-all touch-manipulation text-sm"
+              className="inline-flex items-center gap-2 bg-fob-orange hover:bg-fob-orange/85 text-white font-semibold text-sm px-6 py-3 rounded-full shadow-md transition-colors hover:shadow-lg touch-manipulation btn-shine"
             >
+              <Heart className="size-4" />
               Donate Now
             </Link>
           </div>

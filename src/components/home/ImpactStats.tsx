@@ -17,7 +17,7 @@ interface Stat {
 const stats: Stat[] = [
   {
     prefix: '$',
-    value: 70000,
+    value: 150000,
     suffix: '+',
     label: 'Total Raised',
     sublabel: 'In charitable giving across all events since our founding',
@@ -27,19 +27,6 @@ const stats: Stat[] = [
     value: 6,
     label: 'Years Strong',
     sublabel: 'Serving the Bellevue community since 2019',
-    colorClass: 'text-[#3A9E42]',
-  },
-  {
-    value: 600,
-    suffix: '+',
-    label: 'Lives Changed',
-    sublabel: 'Individuals and families touched by our charitable work',
-    colorClass: 'text-fob-orange',
-  },
-  {
-    value: 3,
-    label: 'Causes',
-    sublabel: 'Dana-Farber, Bread of Life & MS Research',
     colorClass: 'text-[#3A9E42]',
   },
 ];
@@ -102,7 +89,7 @@ export default function ImpactStats() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 gap-8 max-w-lg mx-auto">
           {stats.map((stat, i) => (
             <motion.div
               key={i}

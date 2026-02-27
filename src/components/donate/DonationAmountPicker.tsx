@@ -387,9 +387,8 @@ export default function DonationAmountPicker() {
                       <span className="font-semibold">Mail to:</span>
                     </p>
                     <p className="text-sm text-gray-600 dark:text-gray-300">
-                      Bellevue Golf Club<br />
-                      320 Porter St<br />
-                      Melrose, MA 02176
+                      67 Bainbridge St<br />
+                      Malden, MA 02148
                     </p>
                   </div>
                 </motion.div>
@@ -399,7 +398,7 @@ export default function DonationAmountPicker() {
             {/* CTA button */}
             {isCheckSelected ? (
               <a
-                href="mailto:info@friendsofbellevue.org?subject=Donation%20by%20Check"
+                href="mailto:info@friendsofbellevue.com?subject=Donation%20by%20Check"
                 className="w-full flex items-center justify-center gap-2 py-4 bg-fob-orange text-white font-bold text-lg rounded-full shadow-lg hover:bg-fob-orange/85 transition-colors btn-shine"
               >
                 <Mail className="size-5" />
