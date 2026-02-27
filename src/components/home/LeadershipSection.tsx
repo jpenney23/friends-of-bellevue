@@ -33,7 +33,7 @@ const leaders = [
     gradient: 'from-[#0F3060] to-[#1B5EA8]',
   },
   {
-    name: 'Karla McDonald',
+    name: 'Karla MacDonald',
     title: 'Secretary',
     tier: 'Officer',
     initials: 'KM',
