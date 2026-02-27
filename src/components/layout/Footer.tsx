@@ -66,8 +66,7 @@ export default function Footer() {
               <li className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin className="size-4 text-fob-green mt-0.5 shrink-0" />
                 <span className="text-white/60 text-sm text-left">
-                  67 Bainbridge St<br />
-                  Malden, MA 02148
+                  Location TBA
                 </span>
               </li>
             </ul>

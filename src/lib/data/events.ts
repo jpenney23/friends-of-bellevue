@@ -15,7 +15,7 @@ export const upcomingEvents: Event[] = [
     title: "Annual FOB Golf Tournament",
     date: "2026-09-21",
     dateDisplay: "September 21, 2026",
-    location: "67 Bainbridge St, Malden, MA 02148",
+    location: "Location TBA",
     description:
       "Join us for our flagship annual golf tournament benefiting Dana-Farber Cancer Institute. A day of golf, camaraderie, and community impact. All skill levels welcome.",
     type: "golf",

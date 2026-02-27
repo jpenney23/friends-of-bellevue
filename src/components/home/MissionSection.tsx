@@ -83,7 +83,7 @@ export default function MissionSection() {
                     Annual Golf Tournament & Community Event
                   </p>
                   <p className="text-gray-500 text-xs mt-0.5">
-                    67 Bainbridge St — Malden, MA
+                    Location TBA
                   </p>
                 </div>
               </div>

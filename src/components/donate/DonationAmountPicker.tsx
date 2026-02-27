@@ -387,8 +387,7 @@ export default function DonationAmountPicker() {
                       <span className="font-semibold">Mail to:</span>
                     </p>
                     <p className="text-sm text-gray-600 dark:text-gray-300">
-                      67 Bainbridge St<br />
-                      Malden, MA 02148
+                      Location TBA
                     </p>
                   </div>
                 </motion.div>
